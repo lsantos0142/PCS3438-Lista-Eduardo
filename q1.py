@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-from pandas.tseries.offsets import YearBegin
 from sklearn.naive_bayes import GaussianNB
 from sklearn.metrics import accuracy_score
 
@@ -13,6 +12,7 @@ x_treino, x_valid = x[:350], x[350:]
 y_treino, y_valid = y[:350], y[350:]
 
 # Modelo
+
 modelo = GaussianNB().fit(x_treino, y_treino)
 
 # Base de treino
