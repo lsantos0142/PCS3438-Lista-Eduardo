@@ -5,7 +5,8 @@ from math import dist
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import cross_val_score
 
-data = pd.read_csv('class02.csv')
+
+data = pd.read_csv('data/class02.csv')
 
 x = data.iloc[:, :-1].values
 y = data.iloc[:, -1].values

@@ -3,10 +3,13 @@ import numpy as np
 from sklearn.naive_bayes import GaussianNB
 from sklearn.metrics import accuracy_score
 
-data = pd.read_csv('class01.csv')
+
+data = pd.read_csv('data/class01.csv')
 
 x = data.iloc[:, :-1].values
 y = data.iloc[:, -1].values
+
+# Dados de treino e validação
 
 x_treino, x_valid = x[:350], x[350:]
 y_treino, y_valid = y[:350], y[350:]
